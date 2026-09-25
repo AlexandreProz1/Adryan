@@ -1,20 +1,14 @@
 const imgdestaques = "./assets/img/rdr2.avif"
 
+let imagenAtual = 1;
 
+const imagen = document.querySelector("imagendestaque")
 
-
-
-
-let atual = 1;
-
-const imagem = document.querySelector("#imagemdestaque")
-const proximo = document.querySelector("proximo")
-
-
-
-
-
-
-
-
-
+setInterval,function (){
+   atual++;
+   if(imgagenAtual >= imgdestaques.length)
+      imagenAtual = 0;
+   
+}
+ imagen.src = imgdestaques,imagenAtual
+ 
